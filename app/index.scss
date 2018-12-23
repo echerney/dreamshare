@@ -1,0 +1,212 @@
+body {
+  margin:0 auto;
+  text-align:center;
+}
+
+// variables
+
+// grid
+
+// animations
+
+// buttons
+
+// nav
+
+// hero
+  .HeroImg {
+    height: 736px;
+    width: 100%;
+    opacity: 0.6;
+    background-image: url("../assets/hero-image.jpg");
+    background-size:cover;
+  }
+
+// cards
+  .CardContainer {
+    width:960px;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .Card {
+    height:400px;
+    width:300px;
+    background-color: blue;
+    margin:auto;
+  }
+
+// bios
+  .BioContainer {
+    width:960px;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .Bio {
+    height:300px;
+    width:228px;
+    background-color: green;
+    margin: auto;
+  }
+
+// slides
+  .SlideContainer {
+    width:960px;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  .SqSlide {
+    height:310px;
+    width:300px;
+    background-color: orange;
+    margin: auto;
+    margin-bottom:20px;
+  }
+
+  .LongSlide {
+    height:310px;
+    width:620px;
+    background-color: orange;
+    margin: auto;
+    margin-bottom:20px;
+  }
+
+// footer
+  .Footer {
+    height: 224px;
+    width:100%;
+    background-color: yellow;
+  }
+
+
+// breakpoints
+
+  //phone
+  @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    body {
+      background-color:black;
+    }
+
+    // hero
+      .HeroImg {
+        height:200px;
+        width:100vw;
+        background-color: red;
+      }
+
+    // cards
+      .CardContainer {
+        width:340px;
+      }
+      .Card {
+        height: 240px;
+        width: 300px;
+        background-color: blue;
+        margin:auto;
+        margin-bottom:20px;
+      }
+
+    // bios
+      .BioContainer {
+        width:340px;
+      }
+      .Bio {
+        height:200px;
+        width:236px;
+        background-color: green;
+        margin: auto;
+        margin-bottom:20px;
+      }
+
+    // slides
+      .SlideContainer {
+        width:340px;
+      }
+
+      .LongSlide, .SqSlide {
+        height:120px;
+        width:340px;
+        background-color: orange;
+        margin: auto;
+        margin-bottom:20px;
+      }
+
+    // footer
+      .Footer {
+        height:200px;
+        width:100vw;
+        background-color: yellow;
+      }
+  }
+
+  //ipad
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
+    body {
+      background-color:black;
+    }
+    // hero
+      .HeroImg {
+        height:200px;
+        width:100vw;
+        background-color: red;
+      }
+
+    // cards
+      .CardContainer {
+        width:748px;
+      }
+      .Card {
+        height:400px;
+        width:236px;
+        background-color: blue;
+        margin:auto;
+        margin-bottom:20px
+      }
+
+    // bios
+      .BioContainer {
+        width:492px;
+      }
+      .Bio {
+        height:300px;
+        width:236px;
+        background-color: green;
+        margin: auto;
+        margin-bottom:20px;
+      }
+
+
+    // slides
+      .SlideContainer {
+        width:748px;
+      }
+      .SqSlide {
+        height:310px;
+        width:236px;
+        background-color: orange;
+        margin: auto;
+        margin-bottom:20px;
+      }
+
+      .LongSlide {
+        height:310px;
+        width:492px;
+        background-color: orange;
+        margin: auto;
+        margin-bottom:20px;
+      }
+
+
+    // footer
+      .Footer {
+        height:200px;
+        width:100vw;
+        background-color: yellow;
+      }
+  }
