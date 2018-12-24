@@ -1,59 +1,193 @@
 body {
   margin:0 auto;
   text-align:center;
+  font-family: Montserrat;
 }
 
 // variables
-
+  $red:#FF4E50;
+  $darkgrey: #444444;
+  $grey:#666666;
+  $offwhite:#E3E3E3;
+  $white:#fff;
+  $black:#000;
 // grid
 
 // animations
 
 // buttons
+  .hollowButton {
+    margin-left:19px;
+    padding: 5px 12px;
+    width: 90px;
+    border: 2px solid $white;
+    border-radius: 40px;
+  }
+  .filledButton {
+    	height: 40px;
+      width: 225px;
+      border-radius: 40px;
+      background-color: $red;
+      border:none;
+      color:#fff;
+      font-weight:bold;
+  }
+  .redHollowButton {
+    height: 40px;
+    width: 225px;
+    border-radius: 40px;
+    border:2px solid $red;
+    font-weight:bold;
+    margin:0 auto;
+    margin-top:36px;
+    margin-bottom:95px;
+  }
+  .redHollowButton p {
+    color:$red !important;
+  }
 
 // nav
+  .navBar {
+    list-style-type: none;
+    display:inline;
+    right:240px;
+    margin-top:46px;
+    position:absolute;
+  }
+  a {
+    text-decoration:none;
+    color:$white;
+  }
+  li {
+    display:inline;
+    font-size:14px;
+  }
+  .topLogo {
+    font-size: 20px;
+    font-weight:bold;
+    color:$white;
+    top:46px;
+    margin-top:0;
+    position: absolute;
+  }
+
+
+// typography
+  h1 {
+    width: 473px;
+    color: $white;
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 63px;
+    text-align: center;
+    text-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+  }
+  h2 {
+    margin: 0 auto;
+    font-size:24px;
+  }
+  h3 {
+    margin: 0 auto;
+    font-size:18px;
+  }
+  p {
+    margin: 0 auto;
+    font-size:14px;
+  }
+  .roboto {
+    font-family: Roboto;
+  }
+  .subtext {
+    font-size:24px;
+    font-weight:300;
+    color:$white;
+  }
+
 
 // hero
-  .HeroImg {
+  .heroImg {
     height: 736px;
     width: 100%;
-    opacity: 0.6;
-    background-image: url("../assets/hero-image.jpg");
+    background-color:$black;
+    background-image: url("../assets/hero-image.png");
     background-size:cover;
+    background-position:left;
+    text-align:left;
+  }
+  .titleSection {
+    width:473px;
+    padding-top:241.5px;
+    text-align:center;
+    line-height: 63px;
+    margin: 0 auto;
+  }
+  .headline {
+    margin-top:85px;
+    margin-bottom:35px;
+    color:$darkgrey;
   }
 
 // cards
-  .CardContainer {
+  .cardContainer {
     width:960px;
     display:inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
   }
-  .Card {
+  .card {
     height:400px;
     width:300px;
-    background-color: blue;
+    background-image: url("../assets/card1.png");
     margin:auto;
+    text-align:left;
+  }
+  .cardContent {
+    margin-left:19px;
+    color:#fff;
+  }
+  .cardSubtext {
+    color:$offwhite;
+  }
+  .stepButton {
+    height:20px;
+    width:70px;
+    border-radius: 40px;
+    background-color: $red;
+    border:none;
+    color:$white;
+    margin-top:219px;
+    font-size:13px;
+    text-align:center;
   }
 
 // bios
-  .BioContainer {
+  .bioContainer {
     width:960px;
     display:inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
   }
-  .Bio {
-    height:300px;
+  .bio {
     width:228px;
-    background-color: green;
     margin: auto;
+  }
+  .avatar {
+    width:126px;
+  }
+  .containterThree {
+    text-align:center;
+  }
+  .containerThree p {
+    margin-top:14px;
+    color:$grey;
   }
 
 // slides
-  .SlideContainer {
+  .slideContainer {
     width:960px;
     display:inline-flex;
     flex-direction: row;
@@ -61,78 +195,144 @@ body {
     justify-content:center;
   }
 
-  .SqSlide {
+  .sqSlide {
     height:310px;
     width:300px;
-    background-color: orange;
+    background-image: url('../assets/runner.png');
     margin: auto;
     margin-bottom:20px;
+    border-radius:4px;
   }
-
-  .LongSlide {
+  .sqSlide h2 {
+    padding-top:142px;
+    color:$white;
+  }
+  .longSlide {
     height:310px;
     width:620px;
-    background-color: orange;
+    background-image: url('../assets/culture.png');
     margin: auto;
     margin-bottom:20px;
+    border-radius:4px;
+  }
+  .longSlide h2 {
+    padding-top:142px;
+    color:$white;
   }
 
 // footer
-  .Footer {
+  .footer {
     height: 224px;
     width:100%;
-    background-color: yellow;
   }
-
+  .formSubtext {
+    color:$darkgrey;
+    margin-bottom:25px;
+  }
+  input {
+    height: 40px;
+    width: 299px;
+    border: 1px solid #D4D4D4;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5),
+    0 1px 2px 0 rgba(0,0,0,0.07);
+  }
+  .footer .filledButton {
+    height: 40px;
+    width: 172.13px;
+    border-radius: 40px;
+    background-color: $red;
+    margin-left:10px;
+  }
+  hr {
+    margin-top:100px;
+    height: 2px;
+    width: 1440px;
+    background-color: #FF4E50;
+    border:none;
+  }
+  .footer a {
+    color:$darkgrey;
+  }
+  .footerLinks {
+    margin-top:39px;
+    display:flex;
+  }
+  .footerLinks table {
+    margin-left:122px;
+  }
+  .bottomLogo {
+    margin-left:249px;
+    color:$red !important;
+  }
+  th, .partners {
+    font-weight:bold;
+    color:$darkgrey;
+    text-align:left;
+  }
+  td {
+    text-align:left;
+  }
+  .partners {
+    margin-left:124px;
+  }
+  td a {
+    text-align:left;
+    color:#999999 !important;
+    font-family:Roboto !important;
+  }
 
 // breakpoints
 
   //phone
   @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
-    body {
-      background-color:black;
-    }
 
     // hero
       .HeroImg {
-        height:200px;
-        width:100vw;
-        background-color: red;
+        width:480px;
+        height:90vh;
+
       }
+        .titleSection {
+          width:273px;
+          padding-top:241.5px;
+          text-align:center;
+          line-height: 63px;
+          margin: 0 auto;
+        }
+
 
     // cards
       .CardContainer {
-        width:340px;
+        width:320px;
       }
       .Card {
         height: 240px;
         width: 300px;
-        background-color: blue;
         margin:auto;
         margin-bottom:20px;
       }
 
     // bios
       .BioContainer {
-        width:340px;
+        width:480px;
       }
       .Bio {
         height:200px;
         width:236px;
-        background-color: green;
         margin: auto;
         margin-bottom:20px;
       }
 
     // slides
       .SlideContainer {
-        width:340px;
+        width:480px;
       }
 
       .LongSlide, .SqSlide {
         height:120px;
         width:340px;
-        background-color: orange;
         margin: auto;
         margin-bottom:20px;
       }
@@ -140,21 +340,18 @@ body {
     // footer
       .Footer {
         height:200px;
-        width:100vw;
-        background-color: yellow;
+        width:100%;
       }
   }
 
   //ipad
   @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
-    body {
-      background-color:black;
-    }
+
+
     // hero
       .HeroImg {
         height:200px;
         width:100vw;
-        background-color: red;
       }
 
     // cards
@@ -164,7 +361,6 @@ body {
       .Card {
         height:400px;
         width:236px;
-        background-color: blue;
         margin:auto;
         margin-bottom:20px
       }
@@ -174,9 +370,7 @@ body {
         width:492px;
       }
       .Bio {
-        height:300px;
         width:236px;
-        background-color: green;
         margin: auto;
         margin-bottom:20px;
       }
@@ -189,7 +383,6 @@ body {
       .SqSlide {
         height:310px;
         width:236px;
-        background-color: orange;
         margin: auto;
         margin-bottom:20px;
       }
@@ -197,7 +390,6 @@ body {
       .LongSlide {
         height:310px;
         width:492px;
-        background-color: orange;
         margin: auto;
         margin-bottom:20px;
       }
@@ -207,6 +399,5 @@ body {
       .Footer {
         height:200px;
         width:100vw;
-        background-color: yellow;
       }
   }
