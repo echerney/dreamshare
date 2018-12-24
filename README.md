@@ -38,5 +38,7 @@ npm run start
 
 ```
 
+The page should now be viewable on http://0.0.0.0:8080/
+
 ### Recommended Viewing
 Due to time constraints, app is best viewed with Google Chrome and on desktop.
