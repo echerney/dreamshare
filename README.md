@@ -11,6 +11,12 @@ First clone the repo to your local machine with command:
 git clone git@github.com:echerney/dreamshare.git
 ```
 
+Navigate to the repo you just pulled down:
+```
+cd dreamshare
+```
+
+
 Then install all dependencies:
 
 ```
