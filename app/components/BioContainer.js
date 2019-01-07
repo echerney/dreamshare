@@ -7,7 +7,8 @@ function Bio() {
     <div className='bio'>
       <img className='avatar' src="../../assets/Bradley.png" />
       <p>Bradley Hunter</p>
-      <p className='roboto'>Based in Chicago. I love playing tennis and loud music.</p>
+      <p className='roboto w-resize90'>Based in Chicago. I love playing tennis and loud music.
+      </p>
     </div>
   )
 }

@@ -7,14 +7,14 @@ const SlideContainer = require('./SlideContainer.js')
 function Hero() {
   return (
     <div className='heroImg'>
-      <h1 className='topLogo'>DREAMSHARE</h1>
-      <ul className="navBar">
+      <h4 className='topLogo w-resize100'>DREAMSHARE</h4>
+      <ul className="navBar w-resize100">
         <li><a href="#">Log In</a></li>
         <li><a className='hollowButton' href="#">Sign Up</a></li>
       </ul>
-      <div className='titleSection'>
-        <h1>SHARE YOUR HOLIDAY DREAM</h1>
-        <h2 className='roboto subtext'>And find the perfect partner to fulfill it.</h2>
+      <div className='titleSection w-resize100'>
+        <h1 className='w-resize90'>SHARE YOUR HOLIDAY DREAM</h1>
+        <h2 className='roboto subtext w-resize90'>And find the perfect partner to fulfill it.</h2>
         <button className='filledButton'>Find your holiday partner</button>
       </div>
     </div>
@@ -30,7 +30,7 @@ function Footer() {
       <input type="text" name="name" />
       <button className='filledButton'>Search partners</button>
       <hr />
-      <div className='footerLinks'>
+      <div className='footerLinks w-resize100'>
         <a href='#' className='bottomLogo'>DREAMSHARE</a>
         <table>
           <tbody>
@@ -81,7 +81,7 @@ class App extends React.Component {
    return (
      <div>
        <Hero />
-       <CardContainer/>
+       <CardContainer />
        <BioContainer />
        <SlideContainer />
        <Footer />
